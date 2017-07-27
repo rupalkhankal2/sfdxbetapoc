@@ -22,3 +22,4 @@ script:
 - sfdx force:auth:jwt:grant --clientid $CONSUMERKEYPILOT --jwtkeyfile assets/server.key --username srparamatmuni@deloitte.com.pck
 - sfdx force:mdapi:deploy -d convertsource/ -u srparamatmuni@deloitte.com.pck
 
+
