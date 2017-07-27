@@ -19,5 +19,6 @@ script:
 - sfdx force:apex:test:run -u ciorg -c -r human
 - sfdx force:org:delete -u ciorg -p
 - sfdx force:source:convert -d convertsource/
-- sfdx force:mdapi:deploy -d convertsource/ -u chantusri@gmail.com
+- sfdx force:auth:jwt:grant --clientid $CONSUMERKEYPILOT --jwtkeyfile assets/server.key
+- sfdx force:mdapi:deploy -d convertsource/ -u srparamatmuni@deloitte.com.pck
 
